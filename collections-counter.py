@@ -36,12 +36,9 @@ for i in global_list:
     for x in size_list: 
         if i[0] == x:
             earnings.append(i[1])
-            
+            size_list.remove(x)
+            break
             
         
-print(global_list)
-print(size_list)
-print(earnings)
 revenue = sum(earnings)
-print(revenue)
-
+print revenue
